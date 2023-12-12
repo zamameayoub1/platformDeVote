@@ -2,8 +2,8 @@ import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import SignIn from "./pages/sign-in";
 import Dashboard from "./pages/dashboard";
-import QuizStart from "./pages/quizStart";
-import QuizContent from "./pages/quizContent";
+import ElectionStart from "./pages/electionStart";
+import ElectionContent from "./pages/electionContent";
 import QuizResults from "./pages/quizResults";
 import VotersList from "./pages/votersList";
 import Elections from "./pages/elections";
@@ -23,12 +23,12 @@ function App() {
       element: <VotersList />,
     },
     {
-      path: "/quizStart",
-      element: <QuizStart />,
+      path: "/electionStart",
+      element: <ElectionStart />,
     },
     {
-      path: "/quizContent",
-      element: <QuizContent />,
+      path: "/electionContent",
+      element: <ElectionContent />,
     },
     {
       path: "/quizResults",
