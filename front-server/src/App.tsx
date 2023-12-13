@@ -7,6 +7,7 @@ import ElectionContent from "./pages/electionContent";
 import QuizResults from "./pages/quizResults";
 import VotersList from "./pages/votersList";
 import Elections from "./pages/elections";
+import ElectionVoters from "./pages/electionVoters";
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +38,10 @@ function App() {
     {
       path: "/elections",
       element: <Elections />,
+    },
+    {
+      path: "/electionVoters",
+      element: <ElectionVoters />,
     },
   ]);
   return (
