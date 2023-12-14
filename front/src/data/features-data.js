@@ -5,24 +5,24 @@ import {
 export const featuresData = [
   {
     color: "gray",
-    title: "Awarded Agency",
+    title: "Secure and Transparent",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "We prioritize the security and integrity of your vote. Our platform utilizes cutting-edge technology to ensure a secure and transparent voting process.",
   },
   {
     color: "gray",
-    title: "Free Revisions",
+    title: "Convenience",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "Vote from the comfort of your home or on the go. No more waiting in long lines – your voice can be heard with just a few clicks.",
   },
   {
     color: "gray",
-    title: "Verified Company",
+    title: "Inclusivity",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "We are committed to making voting accessible to everyone. Our platform is designed with inclusivity in mind, ensuring that every eligible voter can exercise their right to vote.",
   },
 ];
 
