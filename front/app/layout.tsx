@@ -3,6 +3,7 @@ import './css/style.css'
 import { Inter, Architects_Daughter } from 'next/font/google'
 
 import Header from '@/components/ui/header'
+import Link from 'next/link'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,4 +39,3 @@ export default function RootLayout({
     </html>
   )
 }
- 
