@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15b6587c-0b7c-44df-8346-e6fe78e40e9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/admin/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/admin/http/request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/admin/model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/admin/repo/AdminRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/admin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/BackServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back-server/src/main/java/com/backserver/backserver/BackServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../back-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-server/src/pages/sign-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../front-server/src/pages/sign-in.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="15b6587c-0b7c-44df-8346-e6fe78e40e9d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
