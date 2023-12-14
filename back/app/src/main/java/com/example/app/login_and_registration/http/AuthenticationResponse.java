@@ -17,6 +17,5 @@ public class AuthenticationResponse {
     private String refreshToken;
     @JsonProperty("error_message")
     private String errorMsg;
-
     private boolean isError;
 }

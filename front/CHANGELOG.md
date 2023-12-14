@@ -1,38 +1,24 @@
-# CHANGELOG.md
+# Change Log
 
-## [3.2.2] - 2023-10-04
+## [2.1.0] 2023-11-14
+- Migrate to @material-tailwind/react latest version of `v2.1.4`
 
-Update Twitter icon
-Update dependencies
+## [2.0.0] 2022-11-10
 
-## [3.2.0] - 2023-05-31
+- Update the entire structure
+- Migration to vite
+- Migration to React 18
+- Migration to React Router DOM 6
+- Migration to @material-tailwind/react latest version
 
-Update dependencies and fix some issues
+## [1.0.0] 2021-06-04
 
-## [3.1.0] - 2023-05-07
+### Original Release
 
-Modal video improvements
+- Started project from [Material Tailwind Kit React](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=changelog-mtkr)
+- Updated all dependencies from [Material Tailwind Kit React](https://www.creative-tim.com/product/material-tailwind-kit-react?ref=changelog-mtkr) and those dependencies that were not working with the new React v17+ API, were deleted and/or replaced
 
-## [3.0.0] - 2023-04-12
+### Warning
 
-Conversion to Next.js
-
-## [2.0.3] - 2023-03-28
-
-Fix video
-
-## [2.0.2] - 2023-03-28
-
-Add self-hosted video
-
-## [2.0.1] - 2023-02-16
-
-Remove header links
-
-## [2.0.0] - 2023-02-16
-
-Replace Cruip CSS with Tailwind CSS
-
-## [1.0.0] - 2020-04-07
-
-First release
+_Warnings might appear while doing a clean npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
+_This product was designed and developed using NodeJS version 14.16.0 LTS, so please make sure to have a compatible version of NodeJS._
