@@ -9,7 +9,7 @@ interface CandidateInfo {
   team: string;
 }
 
-export default function ElectionContent() {
+export default function ElectionVoters() {
   const [showPopup, setShowPopup] = useState(false);
   const [candidateInfo, setCandidateInfo] = useState<CandidateInfo>({
     fullName: "",
@@ -45,12 +45,12 @@ export default function ElectionContent() {
       <LayoutDashboard>
          <div id="home">
         <div className="lg:flex justify-between items-center mb-6">
-          <p className="text-2xl font-semibold mb-2 lg:mb-0">Condidats</p>
+          <p className="text-2xl font-semibold mb-2 lg:mb-0">Voters</p>
           <button
             className="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow"
             onClick={() => setShowPopup(true)}
           >
-            Create condidat
+            Add voters
           </button>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function ElectionContent() {
               alignItems: 'center',
             }}
           >
-            <h2 style={{ marginBottom: '20px' }}>Create Condidat</h2>
+            <h2 style={{ marginBottom: '20px' }}>Ad voters</h2>
             <form onSubmit={handleFormSubmit} style={{ width: '100%' }}>
               <div className="form-group m-2">
                 <input
@@ -153,8 +153,9 @@ export default function ElectionContent() {
               <thead>
                 <tr>
                   <th>id</th>
-                  <th>Name</th>
-                  <th>team</th>
+                  <th>voter Name</th>
+                  <th>email</th>
+                  <th>Phone number</th>
                   <th>CIN</th>
                   <th></th>
                 </tr>
@@ -193,7 +194,7 @@ export default function ElectionContent() {
       )}
       <Link to={'/electionVoters'}>
             <button className="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow">
-              Save Condidats
+              publish 
             </button>
       </Link>
       </LayoutDashboard>
