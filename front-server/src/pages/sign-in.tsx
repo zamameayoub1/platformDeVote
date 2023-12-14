@@ -71,19 +71,18 @@ export default function SignIn() {
                 <form onSubmit={handleSubmit}>
                   <div className="py-2">
                     <label
-                      htmlFor="Email"
+                      htmlFor="Username"
                       className="text-sm font-semibold text-gray-800"
                     >
-                      Email
+                      Username
                     </label>
                     <input
-                      id="Email"
+                      id="username"
                       ref={userRef}
-                      type="email"
-                      name="email"
-                      placeholder="vote@example.com"
+                      type="text"
+                      name="username"
+                      placeholder="username"
                       required
-                      autoComplete="email"
                       className="w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-800 rounded"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
