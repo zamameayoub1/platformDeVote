@@ -60,12 +60,6 @@ export function SignUp() {
       </div>
       <div className="w-full lg:w-3/5 flex flex-col items-center justify-center">
         <div className="text-center">
-          <Typography variant="h3" color="blue-gray" className="font-bold mb-4">Welcome.</Typography>
-          <Typography variant="h4" color="blue-gray" className="font-bold mb-4"> We exist to make your voice more crucial in shaping the future.</Typography>
-        </div>
-        <form 
-        onSubmit={handleSubmit}
-        className="mt-8 mb-2 mx-auto w-80 max-w-screen-lg lg:w-1/2">
           <div className="mb-1 flex flex-col gap-6">
             <Typography variant="small" color="blue-gray" className="-mb-3 font-medium">
               full name

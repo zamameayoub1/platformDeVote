@@ -1,4 +1,5 @@
 import LayoutDashboard from "../layouts/layout-dashboard";
+import { Link } from "react-router-dom";
 
 export default function ElectionStart() {
   return (
@@ -30,8 +31,12 @@ export default function ElectionStart() {
         </div>
         <p className="mt-2 ">after submiting you will be directed to form of condidats and voters and you will not be able to change the voters number tell the end of election life time</p>
         <div className="mt-4 flex flex-row space-x-2">
-            <input  className="w-200 bg-white rounded-md border-gray-300 text-black px-2 py-1 bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2  font-semibold shadow" id="emotions" type="submit"/>
-        </div>
+        <Link to={'/electionContent'}>
+            <button className="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow">
+              Save Condidats
+            </button>
+      </Link>
+      </div>
         </div>
 
     </LayoutDashboard>

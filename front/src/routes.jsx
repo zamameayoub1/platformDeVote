@@ -1,31 +1,29 @@
-import { Home, Profile, SignIn, SignUp } from "@/pages";
+import { Home, SignIn, SignUp, Vote } from "@/pages";
 
 export const routes = [
   {
     name: "home",
     path: "/home",
     element: <Home />,
-  },
-  {
-    name: "profile",
-    path: "/profile",
-    element: <Profile />,
+    showInNavbar: true,
   },
   {
     name: "Sign In",
     path: "/sign-in",
     element: <SignIn />,
+    showInNavbar: true,
   },
   {
     name: "Sign Up",
     path: "/sign-up",
     element: <SignUp />,
+    showInNavbar: true,
   },
   {
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
-    element: "",
+    name: "Vote",
+    path: "/vote",
+    element: <Vote />,
+    showInNavbar: false, 
   },
 ];
 
