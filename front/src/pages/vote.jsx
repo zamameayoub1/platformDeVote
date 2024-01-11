@@ -44,9 +44,9 @@ export function Vote() {
                 </label>
             ))}
             </div>
-
+            
             <div className="text-center">
-            <Link to="/">
+            <Link to={"/"}>
                 <Button className="mt-6" fullWidth>
                     Submit Vote
                 </Button>
