@@ -20,7 +20,6 @@ public class AdminService {
         String adminUsername = "admin";
         String adminPassword = "adminPassword"; // You should encrypt this password before saving it.
 
-        // Check if the admin user already exists
         if (adminRepository.findByUsername(adminUsername) == null) {
             Admin adminUser = new Admin();
             adminUser.setUsername(adminUsername);

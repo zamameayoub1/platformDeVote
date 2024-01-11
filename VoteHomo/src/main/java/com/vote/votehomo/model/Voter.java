@@ -1,19 +1,16 @@
-package com.backserver.backserver.admin.model;
+package com.vote.votehomo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
-
+import lombok.*;
 
 @Entity
 @Data
-public class Admin {
-
+public class Voter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String username;
-    private String password;
+    private String name;
 }

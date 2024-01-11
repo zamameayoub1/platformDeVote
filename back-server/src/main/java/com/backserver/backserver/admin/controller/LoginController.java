@@ -10,10 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
+
 public class LoginController {
 
     private final AdminRepo adminRepository;
-
     @Autowired
     public LoginController(AdminRepo adminRepository) {
         this.adminRepository = adminRepository;
@@ -27,10 +27,8 @@ public class LoginController {
         Admin admin = adminRepository.findByUsername(username);
 
         if (admin != null && admin.getPassword().equals(password)) {
-            // Successful login
             return ResponseEntity.ok("Successfully logged in");
         } else {
-            // Failed login
             return ResponseEntity.badRequest().body("Invalid username or password");
         }
     }

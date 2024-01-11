@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 8070
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/votedb
+    url: jdbc:postgresql://localhost:5432/votedb1
     username: quizly
     password: quizly
     driver-class-name: org.postgresql.Driver
@@ -17,11 +17,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate.transaction.jta.platform: org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform
     open-in-view: false
-app:
-  api:
-    swagger:
-      enable: true
-jwt:
-  config:
-    secret: ad81fcba52342929672c0d8097c66e3f856db127798a02a890519b6fe79c19af
-    expiration: 60000
+  h2:
+    console:
+      enabled: true
