@@ -23,7 +23,7 @@ export default function NavBar() {
               className="flex items-center space-x-2"
             >
               <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                Vote
+                Admin Server
               </span>
             </a>
             <div className="relative flex max-h-10 items-center lg:hidden">

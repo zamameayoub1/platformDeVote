@@ -1,19 +1,11 @@
 import React from "react";
 import {
-  Card,
-  CardBody,
-  CardHeader,
   Typography,
-  Button,
-  IconButton,
-  Input,
-  Textarea,
-  Checkbox,
 } from "@material-tailwind/react";
-import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
-import { FeatureCard, TeamCard } from "@/widgets/cards";
-import { featuresData, teamData, contactData } from "@/data";
+import { FeatureCard } from "@/widgets/cards";
+import { featuresData } from "@/data";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -34,9 +26,9 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
               Welcome to Our voting platform, where democracy meets the digital age. We are thrilled to have you here, and we believe that your participation is crucial in shaping the future.
               </Typography>
-              <button class="mx-auto w-[150px] bg-white h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000]">
+              <Link to="/sign-in" className="mx-auto w-[150px] bg-white h-[50px] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:shadow-lg before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-[#009b49] before:to-[rgb(105,184,141)] before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#000]">
                 Start Vote
-              </button>
+              </Link>
             </div>
             
           </div>

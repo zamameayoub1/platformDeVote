@@ -5,12 +5,13 @@ import routes from "@/routes";
 
 function App() {
   const { pathname } = useLocation();
+  const navbarRoutes = routes.filter(route => route.showInNavbar);
 
   return (
     <>
-      {!(pathname == '/sign-in' || pathname == '/sign-up') && (
+      {!(pathname == '/sign-in' || pathname == '/sign-up'|| pathname == '/vote') && (
         <div className="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
-          <Navbar routes={routes} brandName="Voting Plateform" />
+          <Navbar routes={navbarRoutes} brandName="Vote Platform" />
         </div>
       )
       }

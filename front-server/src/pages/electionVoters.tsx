@@ -14,7 +14,7 @@ export default function ElectionVoters() {
   const [candidateInfo, setCandidateInfo] = useState<CandidateInfo>({
     fullName: "",
     cin: "",
-    photo: "", // Initially set to empty string
+    photo: "", 
     team: "",
   });
   const [candidates, setCandidates] = useState<CandidateInfo[]>([]);
@@ -55,7 +55,7 @@ export default function ElectionVoters() {
         </div>
       </div>
   
-        {/* Popup for creating a new candidate */}
+        {/* Popup for creating a new voters */}
         {showPopup && (
           <div
           style={{
@@ -87,7 +87,7 @@ export default function ElectionVoters() {
             <form onSubmit={handleFormSubmit} style={{ width: '100%' }}>
               <div className="form-group m-2">
                 <input
-                  type="text"
+                  type="checkbox"
                   className=" input input-bordered input-primary  max-w-xs m-5"
                   id="fullName"
                   name="fullName"
@@ -95,11 +95,11 @@ export default function ElectionVoters() {
                   value={candidateInfo.fullName}
                   onChange={handleInputChange}
                   required
-                />
+                /> Zamame ayoub
               </div>
               <div className="form-group m-2">
                 <input
-                  type="text"
+                  type="checkbox"
                   placeholder="CIN"
                   className=" input input-bordered input-primary  max-w-xs m-5"
                   id="cin"
@@ -107,29 +107,7 @@ export default function ElectionVoters() {
                   value={candidateInfo.cin}
                   onChange={handleInputChange}
                   required
-                />
-              </div>
-              <div className="form-group m-2">
-                <input
-                  type="text"
-                  placeholder="team"
-                  className=" input input-bordered input-primary  max-w-xs m-5"
-                  id="team"
-                  name="team"
-                  value={candidateInfo.team}
-                  onChange={handleInputChange}
-                  required
-                />
-                <div className="form-group m-2">
-                <input
-                  type="file"
-                  className=" file-input file-input-bordered file-input-primary  max-w-xs m-2"
-                  id="photo"
-                  name="photo"
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
+                />Mahrache Khalil
               </div>
               <div className="form-group m-5 btn" style={{ marginTop: '20px' }}>
                 <button type="submit">Submit</button>
@@ -145,7 +123,7 @@ export default function ElectionVoters() {
         </div>
         )}
   
-        {/* Table with candidates */}
+        {/* Table with voters */}
         {!showPopup && (
         <div className="mt-4 flex flex-col bg-gray-100 rounded-lg p-4 shadow-sm">
           <div className="overflow-x-auto">
@@ -155,7 +133,6 @@ export default function ElectionVoters() {
                   <th>id</th>
                   <th>voter Name</th>
                   <th>email</th>
-                  <th>Phone number</th>
                   <th>CIN</th>
                   <th></th>
                 </tr>
@@ -166,15 +143,6 @@ export default function ElectionVoters() {
                     <td>#{index + 1}</td>
                     <td>
                       <div className="flex items-center gap-3">
-                        <div className="avatar">
-                          <div className="mask mask-squircle w-12 h-12">
-                            {typeof candidate.photo === "string" ? (
-                              <img src={candidate.photo} alt="Avatar" />
-                            ) : (
-                              <span>File Uploaded</span>
-                            )}
-                          </div>
-                        </div>
                         <div>
                           <div className="font-bold">{candidate.fullName}</div>
                         </div>
@@ -192,7 +160,7 @@ export default function ElectionVoters() {
           </div>
         </div>
       )}
-      <Link to={'/electionVoters'}>
+      <Link to={'/elections'}>
             <button className="bg-blue-500 hover:bg-blue-600 focus:outline-none rounded-lg px-6 py-2 text-white font-semibold shadow">
               publish 
             </button>

@@ -14,7 +14,7 @@ export default function ElectionContent() {
   const [candidateInfo, setCandidateInfo] = useState<CandidateInfo>({
     fullName: "",
     cin: "",
-    photo: "", // Initially set to empty string
+    photo: "", 
     team: "",
   });
   const [candidates, setCandidates] = useState<CandidateInfo[]>([]);
